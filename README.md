@@ -1,6 +1,5 @@
 # Simple Django Login and Registration
-
-An example of Django project with basic user functionality.
+Django simple username email login signup page .
 
 ## Screenshots
 
@@ -12,39 +11,14 @@ An example of Django project with basic user functionality.
 | ---------------|------------------|-----------------|
 | <img src="./screenshots/password_reset.png" width="200"> | <img src="./screenshots/set_new_password.png" width="200"> | <img src="./screenshots/password_change.png" width="200"> |
 
-## Functionality
-
-- Log in
-    - via username & password
-    - via email & password
-    - via email or username & password
-    - with a remember me checkbox (optional)
-- Create an account
-- Log out
-- Profile activation via email
-- Reset password
-- Remind a username
-- Resend an activation code
-- Change password
-- Change email
-- Change profile
-- Multilingual: English, Russian, and Simplified Chinese
-
 
 ## Installing
 
-### Clone the project
-
-```
-git clone https://github.com/egorsmkv/simple-django-login-and-register
-cd simple-django-login-and-register
-```
 
 ### Install dependencies & activate virtualenv
 
 ```
 pip install pipenv
-
 pipenv install
 pipenv shell
 ```
@@ -58,13 +32,13 @@ pipenv shell
 ### Apply migrations
 
 ```
-python source/manage.py migrate
+python manage.py migrate
 ```
 
 ### Collect static files (only on a production server)
 
 ```
-python source/manage.py collectstatic
+python manage.py collectstatic
 ```
 
 ### Running
@@ -74,5 +48,5 @@ python source/manage.py collectstatic
 Just run this command:
 
 ```
-python source/manage.py runserver
+python manage.py runserver
 ```
